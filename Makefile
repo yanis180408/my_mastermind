@@ -2,7 +2,7 @@ NAME = my_mastermind
 SRC = main.c validate.c helper.c placements.c input.c generate_code.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -g3
+CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
