@@ -16,7 +16,7 @@ char *generate_code(void){
     }
     int i = 0;
     while(i < length){
-        int j = rand() % 9;
+        int j = rand() % 9; //0 to 9, 9 not included
 
         if (used[j] == 0){
             random_code[i] = j + '0';
