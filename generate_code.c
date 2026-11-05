@@ -19,7 +19,7 @@ char *generate_code(void){
         int j = rand() % 9; //0 to 9, 9 not included
 
         if (used[j] == 0){
-            random_code[i] = j + '0';
+            random_code[i] = j + '0'; //+ '0' pour la base
             used[j] = 1;
             i++;
             } 
