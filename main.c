@@ -59,10 +59,6 @@ int main(int argc, char *argv[]){
       fflush(stdout);
       n = read(0, buffer, 5);
 
-    //   if (n <= 0){
-    //     ended = 1;
-    //     break;
-    //   }
         int had_newline = 0;
         if (n > 0){
             int had_newline = (buffer[n - 1] == '\n');
